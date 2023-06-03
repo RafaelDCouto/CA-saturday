@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Raleway:wght@400;500;700&display=swap');
+
+:root {
+    --large-font-: 'Lato', sans-serif;
+    --small-font-: 'Raleway', sans-serif;
+    --green: forestgreen;
+    --background: rgb(12, 48, 27);
+}
+
+body {
+    font-family: var(--small-font-);
+}
+
+body {
+    font-family: var(--small-font-);
+}
+
+/*button*/
+.bg-primary {
+    background-color: var(--green) !important;
+}
+
+.btn:not(.nav-btns button) {
+    background-color: #fff;
+    color: rgb(181 231 185);
+    padding: 10px 28px;
+    border-radius: 25px;
+    border: 1px solid rgb(85,85,85);
+}
+
+    .btn:not(.nav-btns button):hover {
+        background-color: var(--green);
+        color: #fff;
+        border-color: var(--green);
+    }
+
+.text-primary {
+    color: gold !important;
+}
+/*navbar*/
+
+.order-lg-2 i {
+    color: white;
+}
+
+.navbar {
+    box-shadow: 0 3px 9px 3px rgb(181 231 185);
+    background-color: rgb(12, 48, 27)
+}
+
+.nav-link:hover {
+    color: var(--green) !important;
+}
+
+.nav item {
+    border-bottom: 0.5px solid rgba(181 231 185);
+}
+
+.navbar-brand img {
+    width: 100px;
+}
+
+.navbar-brand span {
+    letter-spacing: 2px;
+    font-family: var(--large-font-);
+    color: #0b630b;
+}
+
+#header {
+    background: url(../images/header.jpg) top/ cover no-repeat;
+    margin-top: 130px;
+    min-height: 30vh;
+}
+
+    #header h1 {
+        color: red;
+        font-size: 30px;
+    }
+
+    #header h2 {
+        color: red;
+        font-size: 80px;
+    }
+
+/*Title*/
+
+.title h2::before {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 50px;
+    background-color: var(--green);
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*Collection*/
+
+#collection {
+    background-color: var(--background);
+}
+
+.active-filter-btn {
+    background-color: var(--green) !important;
+    color: #fff !important;
+    border-collapse: var(--green) !important;
+}
+
+.filter-button-group .btn:hover {
+    color: #fff !important;
+}
+
+/*Special Offers*/
+
+
+#special {
+    background-color: var(--background)
+}
+
+
+/*Deals*/
+
+#deals {
+    background: url(../images/deals_img.jpg) no-repeat center/cover;
+    background-color: var(--background);
+}
+
+    #deals .row {
+        min-height: 40vh;
+    }
+
+.deals-content span {
+    font-size: 28px;
+    color: var(--green);
+    font-family: var(--large-font-);
+}
+
+.deals-content h2 {
+    font-size: 60px;
+    font-family: var(--large-font-);
+}
+
+.deals-content .btn {
+    border-color: transparent !important;
+}
+
+/* newsletter */
+#newsletter {
+    background-color: var(--background);
+}
+
+    #newsletter .input-group {
+        max-width: 1000px;
+    }
+
+    #newsletter .form-control {
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+    }
+
+    #newsletter .btn {
+        background-color: var(--green);
+        color: #fff;
+        border-color: var(--green);
+    }
+
+        #newsletter .btn:hover {
+            background-color: #000;
+            border-color: #000;
+        }
+
+/* footer */
+footer .brand {
+    font-family: var(--large-font-);
+    letter-spacing: 2px;
+}
+
+footer a {
+    -webkit-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+
+    footer a:hover {
+        color: var(--green) !important;
+    }
+
+
+/*lOGIN*/
+.login-container {
+    width: 500px;
+    height: min-content;
+    border-radius: 12px;
+    background: var(--background);
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+}
+
+    .login-container h1 {
+        font-size: 36px;
+        margin-bottom: 25px;
+    }
+
+    .login-container form {
+        font-size: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: px;
+    }
+
+        .login-container form .form-group {
+            margin-bottom: 12px;
+        }
+
+        .login-container form input[type="submit"] {
+            font-size: 20px;
+            margin-top: 15px;
+        }
+
+/*Contact*/
+
+.contact-container {
+    width: 1000px;
+    height: min-content;
+    border-radius: 12px;
+    background: var(--background);
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+    .contact-container h2 {
+        font-size: 50px;
+        margin-bottom: 25px;
+    }
+
+    .contact-container form {
+        font-size: 20px;
+        padding-bottom: 50px;
+    }
+
+        .contact-container form .form-contact {
+            padding-left: 33%;
+        }
+
+/*About us*/
+
+#headerAbout {
+    max-width: 700px;
+}
+
+/*Cart Page*/
+
+
+#anone {
+    color: white;
+}
+
+.products-container {
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+}
+
+
+
+    .products-container ion-icon {
+        font-size: 25px;
+        color: var(--green);
+        margin-left: 10px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+
+.product-header {
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 auto;
+    border-bottom: 6px solid var(--background);
+    margin-bottom: 0px;
+}
+
+.product-tittle {
+    width: 45%;
+}
+
+.price {
+    width: 15%;
+    display: flex;
+    align-items: center;
+}
+
+.quantity {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.total {
+    width: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.product {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--green);
+}
+
+    .product ion-icon {
+        cursor: pointer
+    }
+
+.products {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+    .products img {
+        width: 35px;
+    }
+
+.basketTotalContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.basketTotalTitle {
+    width: 30%;
+}
+
+.basketTotal {
+    width: 10%;
+}
+
+
+/*Media Queries*/
+@media(min-width: 992px) {
+    .nav-item {
+        border-bottom: none;
+    }
+}
